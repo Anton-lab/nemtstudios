@@ -545,6 +545,9 @@ table {
   margin: 0 auto;
   width: 250px;
   height: 50px; }
+  @media (max-width: 600px) {
+    .button {
+      width: 100%; } }
   .button:hover {
     background-color: #282828;
     color: #1D8DFF;
@@ -764,7 +767,17 @@ table {
     .slider .slider__item img {
       width: 100%; }
     .slider .slider__item .video-slider {
-      width: 100%; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      object-fit: cover; }
     .slider .slider__item .mask-video {
       position: absolute;
       top: 0;
@@ -868,7 +881,7 @@ table {
       @media (max-width: 600px) {
         .wrap-slider .controls-slider .button-close-slider {
           right: 20px;
-          top: 20px; } }
+          top: 15px; } }
       .wrap-slider .controls-slider .button-close-slider:after, .wrap-slider .controls-slider .button-close-slider:before {
         content: '';
         position: absolute;
@@ -2047,6 +2060,9 @@ footer {
       -moz-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column; } }
+  @media (max-width: 600px) {
+    .content-footer {
+      padding: 50px 0; } }
   .content-footer .copyright {
     display: -webkit-box;
     display: -moz-box;
@@ -2080,15 +2096,18 @@ footer {
     @media (max-width: 1024px) {
       .content-footer .social-block {
         order: 1;
-        margin-top: 45px; }
+        margin-top: 35px; }
         .content-footer .social-block .social-link:first-child {
           margin-left: 0; } }
     @media (hover: none) and (pointer: coarse) {
       .content-footer .social-block {
         order: 1;
-        margin-top: 45px; }
+        margin-top: 35px; }
         .content-footer .social-block .social-link:first-child {
           margin-left: 0; } }
+    @media (max-width: 767px) {
+      .content-footer .social-block {
+        margin-top: 50px; } }
     .content-footer .social-block .social-link {
       cursor: pointer;
       width: 24px;

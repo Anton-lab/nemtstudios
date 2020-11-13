@@ -103,7 +103,13 @@
       width: 100%;
     }
     .video-slider {
-      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%,-50%));
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      object-fit: cover;
     }
     .mask-video {
       position: absolute;
@@ -197,7 +203,7 @@
       cursor: pointer;
       @include breakpoint(mxs) {
         right: 20px;
-        top: 20px;
+        top: 15px;
       }
 
       &:after, &:before {

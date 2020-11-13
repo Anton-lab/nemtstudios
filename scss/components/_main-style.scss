@@ -6,8 +6,11 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
+  @include breakpoint(f-s){
+    font-size: 36px;
+  }
   @include breakpoint(sm-down) {
-    font-size: 35px;
+    font-size: 31px;
   }
   @include breakpoint(xs) {
     font-size: 28px;

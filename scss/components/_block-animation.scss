@@ -46,7 +46,7 @@
     z-index: 3;
     opacity: 0;
     color: #fff;
-    font-family: $font-family-n;
+    font-family: $font-family;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -58,7 +58,7 @@
       font-weight: 600;
       font-size: 30px;
       text-transform: uppercase;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       @include breakpoint(md-lg){
         font-size: 23px;
       }

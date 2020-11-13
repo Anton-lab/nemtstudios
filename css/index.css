@@ -186,12 +186,15 @@ table {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px; }
+  @media (max-width: 1500px) {
+    .title-block {
+      font-size: 36px; } }
   @media (max-width: 1024px) {
     .title-block {
-      font-size: 35px; } }
+      font-size: 31px; } }
   @media (hover: none) and (pointer: coarse) {
     .title-block {
-      font-size: 35px; } }
+      font-size: 31px; } }
   @media (max-width: 767px) {
     .title-block {
       font-size: 28px; } }
@@ -376,7 +379,7 @@ table {
     z-index: 3;
     opacity: 0;
     color: #fff;
-    font-family: "Nunito", sans-serif;
+    font-family: "Mulish";
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -387,7 +390,7 @@ table {
       font-weight: 600;
       font-size: 30px;
       text-transform: uppercase;
-      margin-bottom: 25px; }
+      margin-bottom: 10px; }
       @media (max-width: 1750px) {
         .block-animation .content-animation .title-animation {
           font-size: 23px; } }

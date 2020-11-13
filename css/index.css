@@ -308,6 +308,9 @@ table {
       max-width: 930px;
       margin-bottom: 35px;
       line-height: 1.5; }
+      @media (max-width: 1500px) {
+        .banner .content-banner .text-banner {
+          font-size: 22px; } }
       @media (max-width: 1199px) {
         .banner .content-banner .text-banner {
           font-size: 20px;
@@ -1397,12 +1400,6 @@ table {
       transition: all .4s ease-in-out; }
       @media (max-width: 1750px) {
         .company-solutions .container .row-solutions .item-solution .title-solution {
-          font-size: 24px; } }
-      @media (max-width: 1024px) {
-        .company-solutions .container .row-solutions .item-solution .title-solution {
-          font-size: 22px; } }
-      @media (hover: none) and (pointer: coarse) {
-        .company-solutions .container .row-solutions .item-solution .title-solution {
           font-size: 22px; } }
     .company-solutions .container .row-solutions .item-solution .text-solution {
       position: relative;
@@ -1736,7 +1733,7 @@ table {
         font-weight: 600;
         margin-top: 45px;
         text-align: center; }
-        @media (max-width: 767px) {
+        @media (max-width: 1500px) {
           .founders .container .content-founders .row-biography .item-biography .name {
             font-size: 24px; } }
         @media (max-width: 359px) {
@@ -1746,6 +1743,9 @@ table {
         font-size: 20px;
         font-weight: 600;
         margin-top: 18px; }
+        @media (max-width: 1500px) {
+          .founders .container .content-founders .row-biography .item-biography .position {
+            font-size: 18px; } }
         @media (max-width: 767px) {
           .founders .container .content-founders .row-biography .item-biography .position {
             font-size: 16px; } }
@@ -1754,7 +1754,7 @@ table {
         color: #707070;
         margin-top: 10px;
         text-align: center; }
-        @media (max-width: 767px) {
+        @media (max-width: 1500px) {
           .founders .container .content-founders .row-biography .item-biography .specialty {
             font-size: 14px; } }
         @media (max-width: 500px) {
@@ -1765,6 +1765,9 @@ table {
         text-align: center;
         font-size: 20px;
         width: 90%; }
+        @media (max-width: 1500px) {
+          .founders .container .content-founders .row-biography .item-biography .text-biography {
+            font-size: 18px; } }
         @media (max-width: 767px) {
           .founders .container .content-founders .row-biography .item-biography .text-biography {
             font-size: 16px; } }
@@ -1774,7 +1777,7 @@ table {
         font-weight: 600;
         color: #C12000;
         text-decoration: none; }
-        @media (max-width: 767px) {
+        @media (max-width: 1500px) {
           .founders .container .content-founders .row-biography .item-biography .link-site {
             font-size: 16px; } }
 
@@ -1838,9 +1841,6 @@ table {
         margin-top: 30px;
         text-align: center; }
         @media (min-width: 1200px) and (max-width: 1499px) {
-          .team .content-team .block-person .name-person {
-            font-size: 20px; } }
-        @media (max-width: 1199px) {
           .team .content-team .block-person .name-person {
             font-size: 20px; } }
       .team .content-team .block-person .position-person {

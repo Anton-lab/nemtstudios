@@ -385,7 +385,6 @@ table {
     z-index: 3;
     opacity: 0;
     color: #fff;
-    font-family: "Mulish";
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -395,6 +394,7 @@ table {
     .block-animation .content-animation .title-animation {
       font-weight: 600;
       font-size: 30px;
+      font-family: "Nunito", sans-serif;
       text-transform: uppercase;
       margin-bottom: 10px; }
       @media (max-width: 1750px) {
@@ -2123,7 +2123,7 @@ footer {
       width: 24px;
       height: 20px;
       margin-left: 35px;
-      background-size: contain;
+      background-size: auto;
       background-repeat: no-repeat;
       background-position: center;
       transition: all .5s ease-in-out; }

@@ -1313,8 +1313,9 @@ table {
 .color-menu {
   color: #343434 !important; }
 
-.company-solutions .content-padding {
-  padding: 50px 0 10px 0; }
+@media (max-width: 767px) {
+  .company-solutions .content-padding {
+    padding: 50px 0 10px 0; } }
 @media (max-width: 600px) {
   .company-solutions .container {
     padding: 0; } }

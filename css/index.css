@@ -369,7 +369,11 @@ table {
     width: calc(100% + 2px);
     height: calc(100% + 2px);
     transition: opacity 0.5s ease-in-out;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -16.3%, rgba(0, 0, 0, 0.51) 57.64%, rgba(0, 0, 0, 0) 118.31%); }
+  .block-animation .img-animation {
+    transition: all 0.5s ease-in-out; }
+  .block-animation:hover .img-animation {
+    filter: grayscale(100%); }
   .block-animation:hover:before {
     opacity: 1; }
   .block-animation:hover .content-animation {

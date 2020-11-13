@@ -1,0 +1,198 @@
+.banner {
+  position: relative;
+  .back-banner {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.15) 71.9%, rgba(196, 196, 196, 0) 104.86%, rgba(0, 0, 0, 0) 104.86%);
+    }
+  }
+  .content-banner {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    .title-banner {
+      font-size: 72px;
+      font-family: $font-family-ns;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .text-banner {
+      font-size: 24px;
+      font-family: $font-family;
+      font-weight: 400;
+      max-width: 930px;
+      margin-bottom: 35px;
+    }
+    .button-video {
+      display: inline-block;
+      position: relative;
+      text-transform: uppercase;
+      padding: 15px 28px;
+      font-family: $font-family;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      transition: all .4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background: #FFFFFF;
+        color: $red;
+      }
+    }
+  }
+}
+
+.company-solutions {
+  padding: 135px 0;
+  .row-solutions {
+    @include flexbox;
+    @include justify-content(space-between);
+    font-family: $font-family;
+    .item-solution {
+      width: calc(33% - 15px);
+      @include flexbox;
+      @include flex-direction(column);
+      @include justify-content(space-between);
+      @include align-items(center);
+      &:hover {
+        .title-solution {
+          color: $red;
+        }
+        .text-solution:after {
+          width: 100%;
+        }
+      }
+      .title-solution {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: $text-color;
+        transition: all .4s ease-in-out;
+      }
+      .text-solution {
+        position: relative;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 80px;
+        color: #707070;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 78px;
+          height: 2px;
+          background-color: $red;
+          transition: all .4s ease-in-out;
+        }
+      }
+      .img-solution {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.our-approach {
+
+  .strip {
+    width: 300px;
+    height: 2px;
+    background-color: $red;
+    margin: 0 auto;
+  }
+  .wrap-animations {
+    padding: 150px 0;
+    @include flexbox;
+    @include flex-wrap(wrap);
+    .block-animation {
+      position: relative;
+      display: flex;
+      width: calc(20% - 0px);
+      &:before {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        transition: all .5s ease-in-out;
+        background: linear-gradient(0deg, rgba(31, 31, 31, 0.6), rgba(31, 31, 31, 0.6));
+      }
+      .img-animation {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+      }
+      &:hover{
+        &:before{
+          opacity: 1;
+        }
+        .content-animation{
+          opacity: 1;
+        }
+      }
+      .content-animation {
+        position: absolute;
+        z-index: 3;
+        opacity: 0;
+        color: #fff;
+        font-family: $font-family;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        text-align: center;
+        transition: all .5s ease-in-out;
+        .title-animation {
+          font-weight: 600;
+          font-size: 24px;
+          text-transform: uppercase;
+        }
+        .text-animation {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.clients {
+  padding-bottom: 160px;
+  .wrap-clients {
+    @include flexbox;
+    @include justify-content(space-between);
+    img {
+      width: calc(10% - 0px);
+    }
+  }
+}
+
+.get-in-touch {
+  background-color: #4A4A4A;
+  .content-form {
+    padding: 140px 0;
+    .title-block {
+      color: #ECECEC;
+    }
+    .text-block {
+      color: #ECECEC;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+
+.company-solutions {
+
+  .container {
+    @include breakpoint(mxs) {
+      padding: 0;
+    }
+    .row-solutions {
+      overflow: hidden;
+      @include flexbox;
+      @include justify-content(space-between);
+      @include breakpoint(sm-down) {
+        @include flex-direction(column);
+      }
+
+      .item-solution {
+        width: calc(33% - 20px);
+        text-decoration: none;
+        position: relative;
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        @include breakpoint(sm-down) {
+          width: calc(100% - 50px);
+          margin: 0 auto 35px auto;
+        }
+        @include breakpoint(xs) {
+          width: 100%;
+        }
+
+        &:hover {
+          .title-solution {
+            color: $red;
+          }
+
+          .text-solution:after {
+            width: 60%;
+          }
+        }
+
+        .title-solution {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 30px;
+          margin-bottom: 20px;
+          color: $text-color;
+          font-family: $font-family-n;
+          text-align: center;
+          transition: all .4s ease-in-out;
+          @include breakpoint( md-lg){
+            font-size: 24px;
+          }
+          @include breakpoint(sm-down) {
+            font-size: 22px;
+          }
+        }
+
+        .text-solution {
+          position: relative;
+          width: 100%;
+          line-height: 1.6;
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 60px;
+          color: #707070;
+          @include breakpoint(md-lg) {
+            font-size: 15px;
+          }
+          @include breakpoint(sm-down) {
+            font-size: 18px;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 78px;
+            height: 2px;
+            background-color: $red;
+            transition: all .5s ease-in-out;
+          }
+        }
+
+        .img-solution {
+          position: relative;
+          height: 530px;
+          @include breakpoint(f-s){
+            height: 400px;
+          }
+          @include breakpoint(xs){
+            height: 360px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-approach {
+  position: relative;
+  .strip {
+    width: 300px;
+    height: 2px;
+    background-color: $red;
+    margin: 0 auto;
+    @include breakpoint(xs) {
+      width: 120px;
+    }
+    @include breakpoint(smxs) {
+      width: 80px;
+    }
+  }
+
+  .wrap-animations {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    @include flexbox;
+    @include flex-wrap(wrap);
+    .block-a-main {
+      @include breakpoint(md-down) {
+        width: calc(25% - 0px);
+      }
+      @include breakpoint(sm-down) {
+        width: calc(33% - 0px);
+      }
+      @include breakpoint(xs) {
+        width: calc(50% - 0px);
+      }
+
+      .content-animation {
+
+        .title-animation {
+          @include breakpoint(sxs) {
+            font-size: 12px;
+            margin-bottom: 15px;
+          }
+        }
+
+        .text-animation {
+          @include breakpoint(sxs) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.ie-our-approach{
+  min-height: 1350px;
+}
+
+.clients {
+  padding-bottom: 120px;
+  @include breakpoint(sm-down) {
+    padding-bottom: 120px;
+  }
+  @include breakpoint(xs) {
+    padding-bottom: 50px;
+  }
+  .wrap-clients {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    @include breakpoint(xs) {
+      @include justify-content(center);
+    }
+    .img-client {
+      width: calc(10% - 0px);
+      @include breakpoint(md-down) {
+        width: calc(25% - 35px);
+      }
+      @include breakpoint(xs) {
+        width: calc(33% - 37px);
+        margin: 14px 18px;
+      }
+    }
+  }
+}
+
+.get-in-touch {
+  background-color: #4A4A4A;
+
+  .content-form {
+
+    .title-block {
+      color: #ECECEC;
+    }
+    .text-block{
+      font-size: 20px;
+    }
+
+    .text-block {
+      color: #ECECEC;
+      .email {
+        color: #1D8DFF;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.logo {
+  background-image: url("../images/svg/logo.svg");
+  @include breakpoint(sm-down) {
+    background-image: url("../images/svg/logo-mob.svg") !important;
+  }
+}
+
+.nav-mobile {
+  background-image: url("../images/Group 268.png");
+}
+
+.color-logo {
+  background-image: url("../images/svg/logo-mob.svg") !important;
+}
+
+.behance {
+  background-image: url("../images/svg/behance-w.svg");
+
+  &:hover {
+    background-image: url("../images/svg/behance-r.svg");
+  }
+}
+
+.linkedin {
+  background-image: url("../images/svg/linkedin-w.svg");
+
+  &:hover {
+    background-image: url("../images/svg/linkedin-r.svg");
+  }
+}
+
+.facebook {
+  background-image: url("../images/svg/facebook-w.svg");
+
+  &:hover {
+    background-image: url("../images/svg/facebook-r.svg");
+  }
+}
+
+.instagram {
+  background-image: url("../images/svg/instagram-w.svg");
+
+  &:hover {
+    background-image: url("../images/svg/instagram-r.svg");
+  }
+}
+
+.vimeo {
+  background-image: url("../images/svg/vimeo-w.svg");
+
+  &:hover {
+    background-image: url("../images/svg/vimeo-r.svg");
+  }
+}
+
+
+.slick-prev {
+  background-image: url("../images/svg/arrow-left.svg");
+
+}
+
+.slick-next {
+  background-image: url("../images/svg/right-arrow.svg");
+}
+
+.facebook-share{
+  background-image: url("../images/svg/face-share.svg");
+  &:hover{
+    background-image: url("../images/svg/face-share-r.svg");
+  }
+}
+.twitter-share{
+  background-image: url("../images/svg/twit-share.svg");
+  &:hover{
+    background-image: url("../images/svg/twit-share-r.svg");
+  }
+}
+.linkedin-share{
+  background-image: url("../images/svg/linkedin-share.svg");
+  &:hover{
+    background-image: url("../images/svg/linkedin-share-r.svg");
+  }
+}

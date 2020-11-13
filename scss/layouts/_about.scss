@@ -1,0 +1,186 @@
+.founders {
+
+  .container {
+    @include breakpoint(mxs) {
+      padding: 0;
+    }
+
+    .content-founders {
+      position: relative;
+      z-index: 1;
+
+      .img-founders {
+        width: 100%;
+      }
+
+      .row-biography {
+        @include flexbox;
+        @include justify-content(center);
+        position: relative;
+        z-index: 2;
+        margin-top: -120px;
+        @include breakpoint(sm-down) {
+          @include flex-direction(column);
+          margin-top: -60px;
+        }
+        @include breakpoint(xs) {
+          margin-top: -20px;
+        }
+
+        .item-biography {
+          @include flexbox;
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(space-between);
+          background: #FFFFFF;
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+          border-bottom: 2px solid $red;
+          max-width: 690px;
+          margin: 0 25px;
+          color: $text-color;
+          @include breakpoint(sm-down) {
+            margin: 0 auto 30px auto;
+            width: 80%;
+          }
+          @include breakpoint(mxs) {
+            width: 90%;
+          }
+
+          .name {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: $font-family-n;
+            font-weight: 600;
+            margin-top: 45px;
+            text-align: center;
+            @include breakpoint(ultra-sxs) {
+              font-size: 20px;
+            }
+          }
+
+          .position {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 18px;
+            @include breakpoint(xs) {
+              font-size: 16px;
+            }
+          }
+
+          .specialty {
+            font-size: 18px;
+            color: #707070;
+            margin-top: 10px;
+            text-align: center;
+            @include breakpoint(xs) {
+              font-size: 14px;
+            }
+            @include breakpoint(smxs) {
+              width: 85%;
+            }
+
+          }
+
+          .text-biography {
+            margin-top: 18px;
+            text-align: center;
+            font-size: 20px;
+            width: 90%;
+            @include breakpoint(xs) {
+              font-size: 16px;
+            }
+          }
+
+          .link-site {
+            margin: 30px 0 45px 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: $red;
+            text-decoration: none;
+            @include breakpoint(xs) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.team {
+  padding-bottom: 120px;
+  @include breakpoint(sm-down){
+    padding-bottom: 80px;
+  }
+  @include breakpoint(xs){
+    padding-bottom: 50px;
+  }
+
+  .content-team {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    margin-top: 50px;
+
+    .block-person {
+      width: calc(25% - 25px);
+      margin-bottom: 50px;
+      @include flexbox;
+      @include flex-direction(column);
+      @include align-items(center);
+      color: $text-color;
+      @include breakpoint(md-down) {
+        width: calc(50% - 25px);
+      }
+      @include breakpoint(xs) {
+        width: calc(100% - 0px);
+      }
+
+      .img-person {
+        width: 100%;
+      }
+
+      .name-person {
+        font-size: 24px;
+        font-family: $font-family-ns;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-align: center;
+        @include breakpoint(lg) {
+          font-size: 20px;
+        }
+        @include breakpoint(md-down) {
+          font-size: 20px;
+        }
+      }
+
+      .position-person {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .strip-person {
+        width: 160px;
+        height: 2px;
+        background: $red;
+        margin-top: 20px;
+      }
+
+      .text-person {
+        font-size: 20px;
+        color: #707070;
+        line-height: 1.8;
+        text-align: center;
+        margin-top: 20px;
+        width: 90%;
+        @include breakpoint(lg) {
+          font-size: 16px;
+        }
+        @include breakpoint(md-down) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

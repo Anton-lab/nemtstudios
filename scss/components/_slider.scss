@@ -1,0 +1,333 @@
+/* Слайдер */
+.slick-slider {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  @include flexbox;
+}
+
+/* Точки (булиты) */
+.slider {
+  .slick-dots {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    margin-top: 15px;
+  }
+  .slick-dots li {
+    list-style: none;
+    margin: 0 15px;
+    @include breakpoint(xs) {
+      margin: 0 10px;
+    }
+  }
+  .slick-dots li.slick-active button {
+    background: #C12000;
+    width: 12px;
+    height: 12px;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(193, 32, 0, 0.45);
+  }
+}
+
+.slider {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .slick-prev, .slick-next {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-disabled {
+    opacity: 0.2;
+  }
+}
+
+.slider {
+  position: relative;
+  padding: 0 25px;
+  width: 100%;
+  @include breakpoint(mxs) {
+    padding: 0;
+  }
+  .slider__item {
+    position: relative;
+    height: 550px;
+    img {
+      width: 100%;
+    }
+    .video-slider {
+      width: 100%;
+    }
+    .mask-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      .button-v-slider {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        background: rgba(254, 251, 251, 0.25);
+        border: 1px solid #FEFBFB;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        span {
+          background: #FFFFFF;
+          width: 30px;
+          height: 30px;
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          position: absolute;
+          top: 50%;
+          left: 57%;
+          transform: translate(-50%, -50%);
+          transition: all .5s ease-in-out;
+        }
+        &:hover {
+          border: 1px solid #FEFBFB;
+          background: #FEFBFB;
+          span {
+            background: $red;
+          }
+        }
+      }
+    }
+    @include breakpoint(sm-down) {
+      height: 350px;
+    }
+    @include breakpoint(xs) {
+      height: 240px !important;
+    }
+    @include breakpoint(ultra-sxs) {
+      height: 180px !important;
+    }
+  }
+}
+
+.wrap-slider {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  visibility: hidden;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  .controls-slider {
+    overflow: auto;
+    position: relative;
+    background-color: #fff;
+    width: 60%;
+    @include breakpoint(f-s) {
+      width: 80%;
+    }
+    @include breakpoint(md-down) {
+      width: 90%;
+    }
+    @include breakpoint(mxs) {
+      width: 100% !important;
+    }
+    .button-close-slider {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      float: right;
+      right: 15px;
+      top: 15px;
+      z-index: 5;
+      cursor: pointer;
+      @include breakpoint(mxs) {
+        right: 20px;
+        top: 30px;
+      }
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        left: 25%;
+        height: 2px;
+        background-color: #000;
+        @include breakpoint(mxs) {
+          background-color: #fff;
+        }
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .slider {
+    .slick-list {
+    }
+    .slick-track {
+
+    }
+    .slider__item {
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .wrap-slider {
+    .controls-slider {
+      width: 55%;
+    }
+  }
+  .slider {
+    .slick-list {
+    }
+    .slick-track {
+
+    }
+    .slider__item {
+      height: 300px;
+    }
+  }
+}
+
+.page {
+  padding: 35px 15px 0 15px;
+  @include breakpoint(xs) {
+    padding: 35px 10px 0 10px;
+  }
+  @include breakpoint(mxs) {
+    padding: 15px 0;
+  }
+}
+
+.active-slider {
+  visibility: visible !important;
+}
+
+.info-slider {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  text-align: center;
+
+  .title-slider {
+    font-family: $font-family-n;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 50px 0 10px 0;
+    text-transform: uppercase;
+    @include breakpoint(xs) {
+      margin: 30px 0 10px 0;
+      font-size: 20px;
+    }
+  }
+
+  .subtitle-slider {
+    font-size: 20px;
+    margin-bottom: 25px;
+    @include breakpoint(xs) {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+  }
+  .strip-slider {
+    display: none;
+    @include breakpoint(xs) {
+      display: block;
+      width: 80px;
+      margin: 0 auto 15px auto;
+      height: 2px;
+      background-color: $red;
+    }
+  }
+
+  .text-slider {
+    color: #707070;
+    font-size: 20px;
+    max-width: 710px;
+    margin-bottom: 30px;
+    @include breakpoint(xs) {
+      font-size: 22px;
+    }
+  }
+
+  .link-slider {
+    font-weight: 600;
+    font-size: 20px;
+    color: $red;
+    text-decoration: none;
+    margin-bottom: 50px;
+    @include breakpoint(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.lock {
+  overflow: hidden;
+}

@@ -1,0 +1,114 @@
+.banner {
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+
+  .banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%,-50%));
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    object-fit: cover;
+    @include breakpoint(sm-down) {
+      display: none;
+    }
+  }
+  .ie-banner-video{
+    height: auto;
+    width: calc(100% + 10px);
+  }
+
+  .banner-img-mobile {
+    display: none;
+    @include breakpoint(sm-down) {
+      display: block;
+    }
+  }
+
+  .content-banner {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    @include breakpoint(xs) {
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+
+    .title-banner {
+      font-size: 72px;
+      font-family: $font-family-ns;
+      font-weight: 700;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      max-width: 980px;
+      @include breakpoint(md-down) {
+        font-size: 50px;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+        font-size: 35px;
+      }
+      @include breakpoint(smxs) {
+        font-size: 28px;
+      }
+    }
+
+    .text-banner {
+      font-size: 24px;
+      max-width: 930px;
+      margin-bottom: 35px;
+      line-height: 1.5;
+      @include breakpoint(md-down) {
+        font-size: 20px;
+        max-width: 750px;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    .button-video {
+      display: inline-block;
+      position: relative;
+      text-transform: uppercase;
+      padding: 15px 28px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      transition: all .4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background: #FFFFFF;
+        color: $red;
+      }
+    }
+    .data-news-banner{
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+  }
+}
+
+@media screen and(min-width: 1925px) {
+  .banner{
+    .container{
+      .content-banner{
+        .title-banner{
+          margin-bottom: 20px;
+        }
+        .text-banner{
+          margin-bottom: 55px;
+        }
+      }
+    }
+  }
+}

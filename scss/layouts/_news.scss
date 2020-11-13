@@ -1,0 +1,20 @@
+.news {
+  .tabs {
+
+    .tab-list {
+      width: 30%;
+      @include breakpoint(sm-down) {
+        width: 50%;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .wrap-news {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      margin: 0 -20px;
+    }
+  }
+}

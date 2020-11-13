@@ -1,0 +1,61 @@
+.news-page {
+  .container {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid $red;
+    @include breakpoint(xs){
+      border-bottom: none;
+    }
+    .news-content {
+      padding: 120px 140px 50px 140px;
+      color: #707070;
+      @include breakpoint(md-down){
+        padding: 80px 80px 50px 80px;
+      }
+      @include breakpoint(xs){
+        padding: 25px 20px;
+      }
+      @include breakpoint(sxs){
+        padding: 10px 10px 20px 10px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.more-news {
+
+  .row-more-news {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
+}
+
+.share-block{
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  margin: 0 auto;
+  padding-bottom: 120px;
+  @include breakpoint(sm-down){
+    padding-bottom: 80px;
+  }
+  .text-share{
+    font-weight: 700;
+    color: $red;
+  }
+  .share-link{
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s ease-in-out;
+  }
+
+}
+
+

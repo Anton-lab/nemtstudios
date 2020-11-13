@@ -1,0 +1,98 @@
+.work-example {
+  .container{
+    @include breakpoint(mxs) {
+      padding: 0;
+    }
+  .tabs {
+    @include breakpoint(mxs){
+      margin: 50px 0 0 0;
+    }
+    .tab-list {
+      width: 50%;
+      @include breakpoint(md-down) {
+        width: 85%;
+        margin: 0 auto 30px auto;
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+
+      li {
+
+        @include breakpoint(md-lg) {
+          font-size: 13px;
+        }
+        @include breakpoint(xs) {
+          margin-bottom: 25px;
+          text-align: center;
+        }
+
+        a {
+
+        }
+      }
+
+      .active {
+        @include breakpoint(xs) {
+          .tab-text-mob {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            color: #707070;
+            margin-top: 20px;
+          }
+        }
+        a {
+        }
+
+      }
+
+      .tab-text-mob {
+        display: none;
+        transition: all .5s ease-in-out;
+      }
+    }
+
+    .tab-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 45%;
+      font-size: 19px;
+      @include breakpoint(md-down) {
+        position: relative;
+        max-width: 60%;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto 30px auto;
+      }
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+
+    .tab-img {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      margin: 0 -20px;
+      .block-animation {
+        width: calc(33% - 28px);
+        margin: 0 15px 35px 15px;
+        @include breakpoint(md-down) {
+          width: calc(33% - 20px);
+          margin: 0 10px 35px 10px;
+        }
+        @include breakpoint(sm-down) {
+          width: calc(50% - 10px);
+          margin: 0 5px 15px 5px;
+        }
+        @include breakpoint(xs) {
+          width: calc(100% - 0px);
+          margin: 0;
+          height: 360px;
+        }
+      }
+    }
+  }
+  }
+}

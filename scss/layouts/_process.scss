@@ -1,0 +1,100 @@
+.process {
+
+  .content-process {
+    .row-process {
+      @include flexbox;
+      margin-bottom: 50px;
+      min-height: 350px;
+      transition: all .5s ease-in-out;
+      @include breakpoint(md-down) {
+        @include flex-direction(column);
+      }
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+
+      &.active-process {
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+        .title-process {
+          color: $red;
+        }
+        .item-info-process {
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .item-img-process {
+        width: 100%;
+        position: relative;
+        @include breakpoint(md-down) {
+          height: 300px;
+          margin-bottom: 25px;
+        }
+        @include breakpoint(xs) {
+          height: 200px;
+        }
+      }
+
+      .item-info-process {
+        color: $text-color;
+        position: relative;
+        padding: 70px 160px 0 70px;
+        width: 100%;
+        &:after {
+          content: '';
+          transition: all .5s ease-in-out;
+          position: absolute;
+          background-color: $red;
+          bottom: 0;
+          left: 1px;
+          right: 0;
+          margin: 0 auto;
+          height: 2px;
+          width: 0%;
+          z-index: 1;
+        }
+        @include breakpoint(md-down) {
+          padding: 0;
+        }
+
+        .title-process {
+          font-family: $font-family-n;
+          font-weight: 600;
+          font-size: 24px;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          transition: all .5s ease-in-out;
+          @include breakpoint(md-down) {
+            margin-left: 20px;
+          }
+          @include breakpoint(xs) {
+            font-size: 20px;
+          }
+        }
+
+        .list-process {
+          width: 90%;
+          margin-left: 20px;
+          @include breakpoint(md-down) {
+            margin-left: 35px;
+          }
+          ul {
+            list-style-position: outside;
+            li {
+              margin-bottom: 20px;
+              color: $red;
+            }
+            span {
+              color: #707070;
+              font-size: 20px;
+              line-height: 32px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

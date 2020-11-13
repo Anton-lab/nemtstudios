@@ -1134,8 +1134,7 @@ table {
           position: relative;
           text-transform: uppercase;
           text-decoration: none;
-          color: #fff;
-          transition: all .5s ease-in-out; }
+          color: #fff; }
           .header .header-menu .nav-desktop li .nav-link:after {
             display: block;
             content: '';
@@ -1150,7 +1149,10 @@ table {
             width: 0;
             height: 2px;
             background: #fff;
-            transition: all .5s ease-in-out; }
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out; }
           .header .header-menu .nav-desktop li .nav-link.color-menu:after {
             background: #C12000; }
           .header .header-menu .nav-desktop li .nav-link.color-menu:hover {
@@ -1275,7 +1277,6 @@ table {
           position: relative;
           text-transform: uppercase;
           text-decoration: none;
-          transition: all .5s ease-in-out;
           color: #343434; }
           .header .header-menu-mob .nav-mobile li .nav-link:hover {
             color: #C12000; }

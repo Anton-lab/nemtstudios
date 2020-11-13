@@ -64,7 +64,6 @@
           text-transform: uppercase;
           text-decoration: none;
           color: #fff;
-          transition: all .5s ease-in-out;
 
           &:after {
             display: block;
@@ -80,7 +79,7 @@
             width: 0;
             height: 2px;
             background: #fff;
-            transition: all .5s ease-in-out;
+            @include transition(all .5s ease-in-out);
           }
           &.color-menu:after {
             background: $red;
@@ -187,7 +186,6 @@
           position: relative;
           text-transform: uppercase;
           text-decoration: none;
-          transition: all .5s ease-in-out;
           color: $text-color;
           &:hover {
             color: $red;

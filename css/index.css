@@ -1472,6 +1472,7 @@ table {
     .clients {
       padding-bottom: 50px; } }
   .clients .wrap-clients {
+    padding-top: 55px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1498,10 +1499,13 @@ table {
         justify-content: center;
         -ms-flex-pack: center; } }
     .clients .wrap-clients .img-client {
+      max-width: 130px;
+      max-height: 85px;
       width: calc(10% - 0px); }
       @media (max-width: 1199px) {
         .clients .wrap-clients .img-client {
-          width: calc(25% - 35px); } }
+          width: calc(25% - 35px);
+          max-width: none; } }
       @media (max-width: 767px) {
         .clients .wrap-clients .img-client {
           width: calc(33% - 37px);

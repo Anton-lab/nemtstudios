@@ -164,6 +164,7 @@
     padding-bottom: 50px;
   }
   .wrap-clients {
+    padding-top: 55px;
     @include flexbox;
     @include align-items(center);
     @include justify-content(space-between);
@@ -172,9 +173,12 @@
       @include justify-content(center);
     }
     .img-client {
+      max-width: 130px;
+      max-height: 85px;
       width: calc(10% - 0px);
       @include breakpoint(md-down) {
         width: calc(25% - 35px);
+        max-width: none;
       }
       @include breakpoint(xs) {
         width: calc(33% - 37px);

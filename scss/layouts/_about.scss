@@ -97,10 +97,7 @@
             font-size: $font-size-3;
             width: 90%;
             @include breakpoint(f-s) {
-              font-size: $font-size-4;
-            }
-            @include breakpoint(xs) {
-              font-size: 16px;
+              font-size: $font-size;
             }
           }
 

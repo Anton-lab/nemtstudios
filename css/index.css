@@ -1107,6 +1107,10 @@ table {
       width: 160px;
       height: 70px;
       transition: all .5s ease-in-out; }
+    .header .header-menu .color-logo {
+      width: 110px;
+      height: 45px;
+      transition: all .5s ease-in-out; }
     .header .header-menu .nav-desktop {
       display: -webkit-box;
       display: -moz-box;
@@ -1205,8 +1209,8 @@ table {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      width: 120px;
-      height: 50px;
+      width: 110px;
+      height: 45px;
       transition: all .5s ease-in-out; }
       @media (max-width: 600px) {
         .header .header-menu-mob .logo {

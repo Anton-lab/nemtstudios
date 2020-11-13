@@ -393,7 +393,7 @@ table {
       margin-bottom: 10px; }
       @media (max-width: 1750px) {
         .block-animation .content-animation .title-animation {
-          font-size: 23px; } }
+          font-size: 22px; } }
       @media (max-width: 1500px) {
         .block-animation .content-animation .title-animation {
           font-size: 20px; } }
@@ -403,9 +403,9 @@ table {
     .block-animation .content-animation .text-animation {
       font-size: 20px;
       font-weight: 300; }
-      @media (max-width: 1199px) {
+      @media (max-width: 1500px) {
         .block-animation .content-animation .text-animation {
-          font-size: 16px; } }
+          font-size: 14px; } }
 
 .validation-field {
   position: relative;

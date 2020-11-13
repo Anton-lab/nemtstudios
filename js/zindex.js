@@ -177,6 +177,8 @@ $(document).ready(function () {
 
     $('.button-v-slider').click(function(){
         $('.video-slider')[0].play();
+        $('.mask-video').css('display','none');
+        $('.video-slider').attr('controls', 'true');
     });
 
 });

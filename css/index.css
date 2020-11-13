@@ -298,7 +298,8 @@ table {
       @media (max-width: 767px) {
         .banner .content-banner .title-banner {
           text-align: center;
-          font-size: 35px; } }
+          font-size: 35px;
+          margin-bottom: 20px; } }
       @media (max-width: 500px) {
         .banner .content-banner .title-banner {
           font-size: 28px; } }
@@ -314,7 +315,8 @@ table {
       @media (max-width: 767px) {
         .banner .content-banner .text-banner {
           text-align: center;
-          font-size: 18px; } }
+          font-size: 18px;
+          margin-bottom: 28px; } }
     .banner .content-banner .button-video {
       display: inline-block;
       position: relative;
@@ -1389,6 +1391,9 @@ table {
       @media (hover: none) and (pointer: coarse) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
           font-size: 18px; } }
+      @media (max-width: 600px) {
+        .company-solutions .container .row-solutions .item-solution .text-solution {
+          padding: 0 20px; } }
       .company-solutions .container .row-solutions .item-solution .text-solution:after {
         content: '';
         position: absolute;
@@ -1491,13 +1496,20 @@ table {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media (max-width: 1024px) {
+      .clients .wrap-clients {
+        padding-top: 35px; } }
+    @media (hover: none) and (pointer: coarse) {
+      .clients .wrap-clients {
+        padding-top: 35px; } }
     @media (max-width: 767px) {
       .clients .wrap-clients {
         -webkit-justify-content: center;
         -moz-justify-content: center;
         -ms-justify-content: center;
         justify-content: center;
-        -ms-flex-pack: center; } }
+        -ms-flex-pack: center;
+        padding-top: 25px; } }
     .clients .wrap-clients .img-client {
       max-width: 130px;
       max-height: 85px;
@@ -1553,6 +1565,10 @@ table {
       font-weight: 400;
       color: #707070;
       margin-top: 20px; } }
+  @media (max-width: 767px) and (max-width: 600px) {
+    .work-example .container .tabs .tab-list .active .tab-text-mob {
+      padding: 0 20px; } }
+
   .work-example .container .tabs .tab-list .tab-text-mob {
     display: none;
     transition: all .5s ease-in-out; }
@@ -1607,6 +1623,9 @@ table {
 @media (max-width: 600px) {
   .founders .container {
     padding: 0; } }
+@media (max-width: 600px) {
+  .founders .container .text-block {
+    padding: 0 20px; } }
 .founders .container .content-founders {
   position: relative;
   z-index: 1; }

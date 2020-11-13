@@ -69,6 +69,9 @@
           @include breakpoint(sm-down) {
             font-size: 18px;
           }
+          @include breakpoint(mxs){
+            padding: 0 20px;
+          }
 
           &:after {
             content: '';
@@ -169,8 +172,12 @@
     @include align-items(center);
     @include justify-content(space-between);
     @include flex-wrap(wrap);
+    @include breakpoint(sm-down){
+      padding-top: 35px;
+    }
     @include breakpoint(xs) {
       @include justify-content(center);
+      padding-top: 25px;
     }
     .img-client {
       max-width: 130px;

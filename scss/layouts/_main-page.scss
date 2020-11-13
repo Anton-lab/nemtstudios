@@ -47,7 +47,7 @@
           font-family: $font-family-n;
           text-align: center;
           transition: all .4s ease-in-out;
-          @include breakpoint( md-lg){
+          @include breakpoint(md-lg){
             font-size: 24px;
           }
           @include breakpoint(sm-down) {
@@ -64,7 +64,7 @@
           margin-bottom: 60px;
           color: #707070;
           @include breakpoint(md-lg) {
-            font-size: 15px;
+            font-size: 14px;
           }
           @include breakpoint(sm-down) {
             font-size: 18px;
@@ -100,6 +100,9 @@
 
 .our-approach {
   position: relative;
+  .text-block{
+    font-size: 22px;
+  }
   .strip {
     width: 300px;
     height: 2px;

@@ -24,10 +24,10 @@
   text-align: center;
   line-height: 1.5;
   @include breakpoint(sm-down) {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   @include breakpoint(xs) {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 

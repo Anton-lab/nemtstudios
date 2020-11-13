@@ -207,13 +207,13 @@ table {
   line-height: 1.5; }
   @media (max-width: 1024px) {
     .text-block {
-      font-size: 20px; } }
+      font-size: 20px !important; } }
   @media (hover: none) and (pointer: coarse) {
     .text-block {
-      font-size: 20px; } }
+      font-size: 20px !important; } }
   @media (max-width: 767px) {
     .text-block {
-      font-size: 18px; } }
+      font-size: 18px !important; } }
 
 .form-text-block {
   max-width: 930px; }
@@ -1371,7 +1371,7 @@ table {
       color: #707070; }
       @media (max-width: 1750px) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
-          font-size: 15px; } }
+          font-size: 14px; } }
       @media (max-width: 1024px) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
           font-size: 18px; } }
@@ -1400,6 +1400,8 @@ table {
 
 .our-approach {
   position: relative; }
+  .our-approach .text-block {
+    font-size: 22px; }
   .our-approach .strip {
     width: 300px;
     height: 2px;

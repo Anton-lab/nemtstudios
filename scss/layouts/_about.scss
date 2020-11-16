@@ -52,25 +52,25 @@
 
           .name {
             text-transform: uppercase;
-            font-size: $font-size-1;
+            font-size: 30px;
             font-family: $font-family-n;
             font-weight: 600;
             margin-top: 45px;
             text-align: center;
             @include breakpoint(f-s){
-              font-size: $font-size-2;
+              font-size: 24px;
             }
             @include breakpoint(ultra-sxs) {
-              font-size: $font-size-3;
+              font-size: 20px;
             }
           }
 
           .position {
-            font-size: $font-size-3;
+            font-size: 20px;
             font-weight: 600;
             margin-top: 18px;
             @include breakpoint(f-s){
-              font-size: $font-size-4;
+              font-size: 18px;
             }
             @include breakpoint(xs) {
               font-size: $font-size;
@@ -78,12 +78,12 @@
           }
 
           .specialty {
-            font-size: $font-size-4;
+            font-size: 18px;
             color: #707070;
             margin-top: 10px;
             text-align: center;
             @include breakpoint(f-s) {
-              font-size: $font-size-5;
+              font-size: 14px;
             }
             @include breakpoint(smxs) {
               width: 85%;
@@ -94,7 +94,8 @@
           .text-biography {
             margin-top: 18px;
             text-align: center;
-            font-size: $font-size-3;
+            font-size: 20px;
+            line-height: 32px;
             width: 90%;
             @include breakpoint(f-s) {
               font-size: $font-size;
@@ -103,7 +104,7 @@
 
           .link-site {
             margin: 30px 0 45px 0;
-            font-size: $font-size-3;
+            font-size: 20px;
             font-weight: 600;
             color: $red;
             text-decoration: none;
@@ -151,19 +152,19 @@
       }
 
       .name-person {
-        font-size: $font-size-2;
+        font-size: 24px;
         font-family: $font-family-ns;
         font-weight: 600;
         text-transform: uppercase;
         margin-top: 30px;
         text-align: center;
         @include breakpoint(lg) {
-          font-size: $font-size-3;
+          font-size: 20px;
         }
       }
 
       .position-person {
-        font-size: $font-size-3;
+        font-size: 20px;
         margin-top: 10px;
       }
 
@@ -175,7 +176,7 @@
       }
 
       .text-person {
-        font-size: $font-size-3;
+        font-size: 20px;
         color: #707070;
         line-height: 1.8;
         text-align: center;

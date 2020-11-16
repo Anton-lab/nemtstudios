@@ -91,7 +91,7 @@
 
 .slider {
   position: relative;
-  padding: 0 25px;
+  padding: 0 20px;
   width: 100%;
   @include breakpoint(mxs) {
     padding: 0;
@@ -106,7 +106,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      @include transform(translate(-50%,-50%));
+      @include transform(translate(-50%, -50%));
       width: calc(100% + 2px);
       height: calc(100% + 2px);
       object-fit: cover;
@@ -261,11 +261,28 @@
   }
 }
 
+@media screen and (max-height: 400px) {
+  .wrap-slider {
+    .controls-slider {
+      .button-close-slider {
+        right: 20px;
+        top: 15px;
+        &:after, &:before {
+          background: #fff;
+        }
+      }
+      .page {
+        padding: 0;
+        .slider {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 .page {
   padding: 35px 15px 0 15px;
-  @include breakpoint(xs) {
-    padding: 35px 10px 0 10px;
-  }
   @include breakpoint(mxs) {
     padding: 0;
   }

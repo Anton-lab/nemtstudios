@@ -759,7 +759,7 @@ table {
 
 .slider {
   position: relative;
-  padding: 0 25px;
+  padding: 0 20px;
   width: 100%; }
   @media (max-width: 600px) {
     .slider {
@@ -910,11 +910,18 @@ table {
 
   .slider .slider__item {
     height: 300px; } }
+@media screen and (max-height: 400px) {
+  .wrap-slider .controls-slider .button-close-slider {
+    right: 20px;
+    top: 15px; }
+    .wrap-slider .controls-slider .button-close-slider:after, .wrap-slider .controls-slider .button-close-slider:before {
+      background: #fff; }
+  .wrap-slider .controls-slider .page {
+    padding: 0; }
+    .wrap-slider .controls-slider .page .slider {
+      padding: 0; } }
 .page {
   padding: 35px 15px 0 15px; }
-  @media (max-width: 767px) {
-    .page {
-      padding: 35px 10px 0 10px; } }
   @media (max-width: 600px) {
     .page {
       padding: 0; } }
@@ -1407,7 +1414,7 @@ table {
       line-height: 1.6;
       font-size: 20px;
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 85px;
       color: #707070; }
       @media (max-width: 1750px) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
@@ -1420,7 +1427,8 @@ table {
           font-size: 18px; } }
       @media (max-width: 600px) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
-          padding: 0 15px; } }
+          padding: 0 15px;
+          margin-bottom: 40px; } }
       .company-solutions .container .row-solutions .item-solution .text-solution:after {
         content: '';
         position: absolute;
@@ -1431,6 +1439,9 @@ table {
         height: 2px;
         background-color: #C12000;
         transition: all .5s ease-in-out; }
+        @media (max-width: 600px) {
+          .company-solutions .container .row-solutions .item-solution .text-solution:after {
+            bottom: -17px; } }
     .company-solutions .container .row-solutions .item-solution .img-solution {
       position: relative;
       height: 530px; }
@@ -1764,6 +1775,7 @@ table {
         margin-top: 18px;
         text-align: center;
         font-size: 20px;
+        line-height: 32px;
         width: 90%; }
         @media (max-width: 1500px) {
           .founders .container .content-founders .row-biography .item-biography .text-biography {

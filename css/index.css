@@ -310,7 +310,7 @@ table {
       line-height: 1.5; }
       @media (max-width: 1500px) {
         .banner .content-banner .text-banner {
-          font-size: 22px; } }
+          font-size: 24px; } }
       @media (max-width: 1199px) {
         .banner .content-banner .text-banner {
           font-size: 20px;

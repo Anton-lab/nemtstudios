@@ -1996,16 +1996,26 @@ table {
       padding: 0; } }
   .news-page .container .news-content {
     padding: 120px 140px 50px 140px;
-    color: #707070; }
+    color: #707070;
+    font-size: 20px; }
     @media (max-width: 1199px) {
       .news-page .container .news-content {
         padding: 80px 80px 50px 80px; } }
     @media (max-width: 767px) {
       .news-page .container .news-content {
-        padding: 40px 20px; } }
+        padding: 40px 20px;
+        font-size: 16px; } }
     @media (max-width: 600px) {
       .news-page .container .news-content {
         padding: 40px 0; } }
+    .news-page .container .news-content .annotation {
+      font-weight: 700;
+      font-size: 24px;
+      color: #343434;
+      margin-bottom: 25px; }
+      @media (max-width: 767px) {
+        .news-page .container .news-content .annotation {
+          font-size: 18px; } }
     .news-page .container .news-content img {
       width: 100%; }
     @media (max-width: 600px) {

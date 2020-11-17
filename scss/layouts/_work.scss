@@ -87,7 +87,7 @@
         }
         @include breakpoint(sm-down) {
           width: calc(50% - 10px);
-          margin: 0 5px 15px 5px;
+          margin: 0 5px 10px 5px;
         }
         @include breakpoint(xs) {
           width: calc(100% - 0px);

@@ -5,6 +5,9 @@
     @include breakpoint(xs){
       border-bottom: none;
     }
+    @include breakpoint(mxs){
+      padding: 0;
+    }
     .news-content {
       padding: 120px 140px 50px 140px;
       color: #707070;
@@ -12,13 +15,18 @@
         padding: 80px 80px 50px 80px;
       }
       @include breakpoint(xs){
-        padding: 25px 20px;
+        padding: 40px 20px;
       }
-      @include breakpoint(sxs){
-        padding: 10px 10px 20px 10px;
+      @include breakpoint(mxs){
+        padding: 40px 0;
       }
       img {
         width: 100%;
+      }
+      p{
+        @include breakpoint(mxs){
+          padding: 0 30px;
+        }
       }
     }
   }

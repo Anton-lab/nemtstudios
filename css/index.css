@@ -1653,11 +1653,11 @@ table {
     @media (max-width: 1024px) {
       .work-example .container .tabs .tab-img .block-animation {
         width: calc(50% - 10px);
-        margin: 0 5px 15px 5px; } }
+        margin: 0 5px 10px 5px; } }
     @media (hover: none) and (pointer: coarse) {
       .work-example .container .tabs .tab-img .block-animation {
         width: calc(50% - 10px);
-        margin: 0 5px 15px 5px; } }
+        margin: 0 5px 10px 5px; } }
     @media (max-width: 767px) {
       .work-example .container .tabs .tab-img .block-animation {
         width: calc(100% - 0px);
@@ -1991,6 +1991,9 @@ table {
   @media (max-width: 767px) {
     .news-page .container {
       border-bottom: none; } }
+  @media (max-width: 600px) {
+    .news-page .container {
+      padding: 0; } }
   .news-page .container .news-content {
     padding: 120px 140px 50px 140px;
     color: #707070; }
@@ -1999,12 +2002,15 @@ table {
         padding: 80px 80px 50px 80px; } }
     @media (max-width: 767px) {
       .news-page .container .news-content {
-        padding: 25px 20px; } }
-    @media (max-width: 450px) {
+        padding: 40px 20px; } }
+    @media (max-width: 600px) {
       .news-page .container .news-content {
-        padding: 10px 10px 20px 10px; } }
+        padding: 40px 0; } }
     .news-page .container .news-content img {
       width: 100%; }
+    @media (max-width: 600px) {
+      .news-page .container .news-content p {
+        padding: 0 30px; } }
 
 .more-news .row-more-news {
   display: -webkit-box;

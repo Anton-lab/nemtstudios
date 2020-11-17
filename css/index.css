@@ -731,7 +731,8 @@ table {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(193, 32, 0, 0.45); }
+  background: rgba(193, 32, 0, 0.3);
+  cursor: pointer; }
 
 .slider .slick-arrow {
   position: absolute;
@@ -739,8 +740,8 @@ table {
   transform: translateY(-100%);
   z-index: 10;
   font-size: 0;
-  width: 20px;
-  height: 20px; }
+  width: 12px;
+  height: 12px; }
 .slider .slick-prev, .slider .slick-next {
   border: none;
   outline: none;
@@ -874,8 +875,8 @@ table {
         width: 100% !important; } }
     .wrap-slider .controls-slider .button-close-slider {
       position: absolute;
-      width: 20px;
-      height: 20px;
+      width: 12px;
+      height: 12px;
       float: right;
       right: 15px;
       top: 15px;
@@ -921,7 +922,7 @@ table {
     .wrap-slider .controls-slider .page .slider {
       padding: 0; } }
 .page {
-  padding: 35px 15px 0 15px; }
+  padding: 30px 10px 0 10px; }
   @media (max-width: 600px) {
     .page {
       padding: 0; } }
@@ -1330,7 +1331,7 @@ table {
 
 @media (max-width: 767px) {
   .company-solutions .content-padding {
-    padding: 50px 0 10px 0; } }
+    padding: 50px 0 0 0; } }
 @media (max-width: 600px) {
   .company-solutions .container {
     padding: 0; } }
@@ -1386,7 +1387,8 @@ table {
         margin: 0 auto 35px auto; } }
     @media (max-width: 767px) {
       .company-solutions .container .row-solutions .item-solution {
-        width: 100%; } }
+        width: 100%;
+        margin: 0 auto 50px auto; } }
     @media (max-width: 767px) {
       .company-solutions .container .row-solutions .item-solution:hover .title-solution {
         color: #343434 !important; }
@@ -1427,8 +1429,8 @@ table {
           font-size: 18px; } }
       @media (max-width: 600px) {
         .company-solutions .container .row-solutions .item-solution .text-solution {
-          padding: 0 15px;
-          margin-bottom: 40px; } }
+          padding: 0 35px;
+          margin-bottom: 60px; } }
       .company-solutions .container .row-solutions .item-solution .text-solution:after {
         content: '';
         position: absolute;
@@ -1439,9 +1441,9 @@ table {
         height: 2px;
         background-color: #C12000;
         transition: all .5s ease-in-out; }
-        @media (max-width: 600px) {
+        @media (max-width: 767px) {
           .company-solutions .container .row-solutions .item-solution .text-solution:after {
-            bottom: -17px; } }
+            bottom: -20px; } }
     .company-solutions .container .row-solutions .item-solution .img-solution {
       position: relative;
       height: 530px; }
@@ -1457,6 +1459,9 @@ table {
   .our-approach .text-block {
     font-size: 22px;
     margin: 0 auto 40px auto; }
+    @media (max-width: 767px) {
+      .our-approach .text-block {
+        padding: 0 15px; } }
   .our-approach .strip {
     width: 300px;
     height: 2px;

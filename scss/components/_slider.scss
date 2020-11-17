@@ -51,7 +51,8 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(193, 32, 0, 0.45);
+    background: rgba(193, 32, 0, 0.3);
+    cursor: pointer;
   }
 }
 
@@ -62,8 +63,8 @@
     transform: translateY(-100%);
     z-index: 10;
     font-size: 0;
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
   }
   .slick-prev, .slick-next {
     border: none;
@@ -194,8 +195,8 @@
     }
     .button-close-slider {
       position: absolute;
-      width: 20px;
-      height: 20px;
+      width: 12px;
+      height: 12px;
       float: right;
       right: 15px;
       top: 15px;
@@ -282,7 +283,7 @@
 }
 
 .page {
-  padding: 35px 15px 0 15px;
+  padding: 30px 10px 0 10px;
   @include breakpoint(mxs) {
     padding: 0;
   }

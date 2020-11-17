@@ -2,11 +2,10 @@
   .container {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
     border-bottom: 3px solid $red;
-    @include breakpoint(xs){
+    @include breakpoint(sm-down){
       border-bottom: none;
-    }
-    @include breakpoint(mxs){
       padding: 0;
+      width: 100%;
     }
     .news-content {
       padding: 120px 140px 50px 140px;
@@ -15,11 +14,11 @@
       @include breakpoint(md-down){
         padding: 80px 80px 50px 80px;
       }
-      @include breakpoint(xs){
+      @include breakpoint(sm-down){
         padding: 40px 20px;
         font-size: 16px;
       }
-      @include breakpoint(mxs){
+      @include breakpoint(xs){
         padding: 40px 0;
       }
       .annotation{
@@ -35,7 +34,7 @@
         width: 100%;
       }
       p{
-        @include breakpoint(mxs){
+        @include breakpoint(xs){
           padding: 0 30px;
         }
       }

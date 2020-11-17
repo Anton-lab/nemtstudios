@@ -99,7 +99,7 @@ $(document).ready(function () {
                     $(this.element).addClass('active-process').next().removeClass('active-process');
                 }
             }, {
-                offset: '50%'
+                offset: '20%'
             });
         }
         else if ($(window).width() < 768) {

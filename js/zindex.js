@@ -25,12 +25,7 @@ $(document).ready(function () {
 
 
     $(".contact").on("click", function () {
-        $("html, body").animate(
-            {
-                scrollTop: $("#contact").offset().top - document.body.clientHeight + $("#contact").height() + 300,
-            },
-            1500
-        );
+        $('body,html').animate({scrollTop:  $("#contact").offset().top}, 1500);
         $('#nav-mob,.back-layer,.burger-menu').removeClass('menu-open');
         $('body').css('overflow', 'auto');
         return false;

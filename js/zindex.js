@@ -27,9 +27,9 @@ $(document).ready(function () {
     $(".contact").on("click", function () {
         $("html, body").animate(
             {
-                scrollTop: $("#contact").offset().top - document.body.clientHeight + $("#contact").height(),
+                scrollTop: $("#contact").offset().top - document.body.clientHeight + $("#contact").height() + 300,
             },
-            1000
+            1500
         );
         $('#nav-mob,.back-layer,.burger-menu').removeClass('menu-open');
         $('body').css('overflow', 'auto');

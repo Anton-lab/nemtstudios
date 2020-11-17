@@ -16,7 +16,7 @@
     transition: all .5s ease-in-out;
   }
   @include breakpoint(md-down) {
-    width: calc(50% - 30px);
+    width: calc(50% - 40px);
   }
 
   @include breakpoint(xs) {

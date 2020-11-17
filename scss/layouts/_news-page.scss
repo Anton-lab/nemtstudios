@@ -34,7 +34,7 @@
 
 .share-block{
   @include flexbox;
-  @include align-items(center);
+  @include align-items(flex-end);
   @include justify-content(center);
   margin: 0 auto;
   padding-bottom: 120px;
@@ -52,7 +52,7 @@
     margin: 0 10px;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     transition: all .5s ease-in-out;
   }
 

@@ -2007,15 +2007,12 @@ table {
         padding: 80px 80px 50px 80px; } }
     @media (max-width: 1024px) {
       .news-page .container .news-content {
-        padding: 40px 20px;
+        padding: 40px 0;
         font-size: 16px; } }
     @media (hover: none) and (pointer: coarse) {
       .news-page .container .news-content {
-        padding: 40px 20px;
+        padding: 40px 0;
         font-size: 16px; } }
-    @media (max-width: 767px) {
-      .news-page .container .news-content {
-        padding: 40px 0; } }
     .news-page .container .news-content .annotation {
       font-weight: 700;
       font-size: 24px;
@@ -2026,7 +2023,10 @@ table {
           font-size: 18px; } }
     .news-page .container .news-content img {
       width: 100%; }
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
+      .news-page .container .news-content p {
+        padding: 0 30px; } }
+    @media (hover: none) and (pointer: coarse) {
       .news-page .container .news-content p {
         padding: 0 30px; } }
 
